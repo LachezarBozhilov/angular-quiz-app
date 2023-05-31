@@ -1,0 +1,38 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+li.unanswered {
+  background-color: #ffcccc;
+}
+
+li:hover {
+  background-color: #eaeaea;
+  transform: translateY(-2px);
+}
+
+li.selected {
+  background-color: #c2e5ff;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}

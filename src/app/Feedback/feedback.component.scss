@@ -1,0 +1,36 @@
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357ae8;
+}
+
+button.restart {
+  background-color: #f44336;
+  margin-top: 30px;
+}
+
+/* app.component.scss */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
