@@ -1,0 +1,8 @@
+<div class="feedback-card">
+  <h1 class="feedback-title">Feedback</h1>
+  <p class="feedback-answer">
+    Your answer was {{ isCorrect ? "correct" : "incorrect" }}.
+  </p>
+  <p class="feedback-score">Your score is {{ score }}.</p>
+  <button class="restart-button" (click)="restartTest()">Restart</button>
+</div>

@@ -1,23 +1,33 @@
-<h2>Angular Quiz App</h2>
-<ul class="question-list">
-  <li
-    *ngFor="let question of questions; let i = index"
-    [class.selected]="i === selectedQuestionIndex"
-    (click)="selectQuestion(i)"
-  >
-    <div class="question-text">{{ question.text }}</div>
-    <div class="options">
-      <label *ngFor="let option of question.options" class="option">
-        <input
-          type="radio"
-          [value]="option"
-          [name]="'question-' + i"
-          [(ngModel)]="selectedAnswers[question.id]"
-        />
-        {{ option }}
-      </label>
-    </div>
-  </li>
-</ul>
+<div class="container">
+  <div class="header">
+    <h2>Angular Quiz App</h2>
+  </div>
 
-<button (click)="submitQuiz()" class="submit-button">Submit</button>
+  <div class="question-list">
+    <div
+      class="question-container"
+      *ngFor="let question of questions; let i = index"
+      [class.selected]="i === selectedQuestionIndex"
+      (click)="selectQuestion(i)"
+    >
+      <div class="question-title">{{ question.text }}</div>
+      <div class="options">
+        <div *ngFor="let option of question.options" class="option">
+          <label>
+            <input
+              type="radio"
+              [value]="option"
+              [name]="'question-' + i"
+              [checked]="selectedAnswers[question.id] === option"
+              (click)="$event.stopPropagation()"
+              (change)="selectedAnswers[question.id] = option"
+            />
+            {{ option }}
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button (click)="submitQuiz()" class="submit-button">Submit</button>
+</div>

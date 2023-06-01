@@ -10,33 +10,49 @@ export class QuestionListComponent {
   questions = [
     {
       id: 1,
-      text: 'Question 1',
-      options: ['Option A', 'Option B', 'Option C'],
-      correctAnswer: 'Option B',
+      text: '1. What does this code output? echo 76 <=> "76 trombones";',
+      options: ['1', '-1', 'a parser error', '0'],
+      correctAnswer: '0',
     },
     {
       id: 2,
-      text: 'Question 2',
-      options: ['Option A', 'Option B', 'Option C'],
-      correctAnswer: 'Option C',
+      text: '2. Which is the most secure way to avoid storing a password in clear text in database?',
+      options: [
+        '$encrypted = shal($password);',
+        '$encrypted = crypt($password, $salt);',
+        '$encrypted = md5($password);',
+        '$encrypted = password_hash($password, PASSWORD_DEFAULT);',
+      ],
+      correctAnswer: '$encrypted = password_hash($password, PASSWORD_DEFAULT);',
     },
     {
       id: 3,
-      text: 'Question 3',
-      options: ['Option A', 'Option B', 'Option C'],
-      correctAnswer: 'Option A',
+      text: '3. In a conditional statement, you want to execute the code only if both value are true. Which comparison operator should you use?',
+      options: [' ||', ' &', '<=>', '&&'],
+      correctAnswer: '&&',
     },
     {
       id: 4,
-      text: 'Question 4',
-      options: ['Option A', 'Option B', 'Option C'],
-      correctAnswer: 'Option C',
+      text: '4. What is a key difference between GET and POST?',
+      options: [
+        'GET is used with the HTTP protocol. POST is used with HTTPS.',
+        'GET displays the submitted data as part of the URL. During POST, this information is not shown, as its encoded in the request body.',
+        'GET is intended for changing the server state and it carries more data than POST.',
+        'GET is more secure than POST and should be used for sensitive information.',
+      ],
+      correctAnswer:
+        ' GET displays the submitted data as part of the URL. During POST, this information is not shown, as its encoded in the request body.',
     },
     {
       id: 5,
-      text: 'Question 5',
-      options: ['Option A', 'Option B', 'Option C'],
-      correctAnswer: 'Option A',
+      text: '5. Which are valid PHP error handling keywords?',
+      options: [
+        'try, throw, catch, callable',
+        'try, yield, catch, finally',
+        'yield, throw, catch, finally',
+        'try, throw, catch, finally',
+      ],
+      correctAnswer: 'try, throw, catch, finally',
     },
   ];
   selectedAnswers: { [questionId: number]: string } = {};

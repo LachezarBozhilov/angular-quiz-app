@@ -1,27 +1,45 @@
-# QuizApp
+# Introduction
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+Quiz app with angular and scss
 
-## Development server
+## How to run it
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Usng docker
 
-## Code scaffolding
+- docker-compose up
+- docker compose for newer version of compose
+- open localhost:4200
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Without docker
 
-## Build
+- npm install -g @angular/cli
+- npm install
+- ng serve --host 0.0.0.0
+- open localhost:4200
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Rquirements
 
-## Running unit tests
+Instructions:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Create an Angular application with the following functions:
+   a. A home page that displays a list of questions.
+   b. Each question must be multiple choice and only one answer can be selected.
+   c. After an answer has been selected, display a confirmation dialog to confirm that the user is sure of their answer.
+   d. After confirming the answer, display the feedback page indicating whether the answer is correct or incorrect.
+   e. Track the user's score and display it on the feedback page.
+   f. Create a navigation bar that has a "Restart" button that allows the user to start the test again.
 
-## Running end-to-end tests
+2. Create at least 5 questions. Choose a topic of your choice. The question should be multiple choice, and the correct choice should be provided.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Implements in-app routing for the user to navigate between the home page, the confirmation dialog, the feedback page, and the restart feature.
 
-## Further help
+4. Demonstrate the use of Angular features such as components, data binding, event handling, and routing.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+5. The app should have a responsive design and work well on different screen sizes.
+
+Evaluation criteria:
+
+      a. Correctness: The application should work as described with correct navigation, question preview, confirmation dialog, feedback display, search tracking and restart functionality.
+      b. Angular Proficiency: The code should demonstrate that the candidate understands and effectively uses Angular concepts and features.
+      c. Code Quality: Code should be clean, well structured and maintainable. Adherence to best practices, proper separation of issues, and code reuse will be considered.
+      d. UI/UX: The application should have an intuitive and user-friendly interface, with appropriate styling and responsiveness.

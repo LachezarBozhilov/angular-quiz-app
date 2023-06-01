@@ -3,12 +3,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-feedback',
-  template: `
-    <h1>Feedback</h1>
-    <p>Your answer was {{ isCorrect ? 'correct' : 'incorrect' }}.</p>
-    <p>Your score is {{ score }}.</p>
-    <button (click)="restartTest()">Restart</button>
-  `,
+  templateUrl: 'feedback.component.html',
   styleUrls: ['feedback.component.scss'],
 })
 export class FeedbackComponent {
